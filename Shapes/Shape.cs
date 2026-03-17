@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vehicles
+namespace Shapes
 {
-    internal class CarEngine : Engine
+    public abstract class Shape
     {
-        public CarEngine() : base(200, FuelType.Diesel)
-        {
-
-        }
+        public abstract double CalculateArea();
     }
 }

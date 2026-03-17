@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace Vehicles
 {
-    internal class Engine
+    internal abstract class Engine
     {
+        public bool Running { get; set; }
+        public int Horsepower { get; set; }
+        public FuelType FuelType { get; set; }
+
+        public Engine(int horsepower,  FuelType fuelType)
+        {
+            this.Running = true;
+            this.Horsepower = horsepower;
+            this.FuelType = fuelType;
+        }
+
+        public void Start()
+        {
+
+        }
     }
 }
